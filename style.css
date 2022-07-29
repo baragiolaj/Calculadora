@@ -58,3 +58,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     border: 5px outset #A40000;
 border-radius: 0px 0px 40px 40px;
 }
+
+@media (min-width: 300px) and (max-width: 758px) {
+.inputsNum {
+    width: 80%;
+}
+.buttons2 {
+    width: 80%;
+}
+}
