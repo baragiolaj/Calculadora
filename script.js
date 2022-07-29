@@ -7,45 +7,57 @@ function calculate(operation) {
     firstnumber = Number(firstnumber);
     secondnumber = Number(secondnumber)
 
+    document.getElementById("result").value = result;
+
     switch (operation) {
         case 'add':
-            alert(result = add(firstnumber, secondnumber));
+            result = add(firstnumber, secondnumber);
+            document.getElementById("result").value = result;
             break;
 
         case 'sub':
-            alert(result = sub(firstnumber, secondnumber));
+            result = sub(firstnumber, secondnumber);
+            document.getElementById("result").value = result;
             break
 
         case 'div':
-            if (secondnumber == 0) {
-                alert("no se puede dividir")
+            if (secondnumber != 0) {
+                result = div(firstnumber, secondnumber);
+                document.getElementById("result").value = result;
             }
-            else if
-                (alert(result = div(firstnumber, secondnumber)));
+            else {
+                    alert("no se puede dividir por 0");
+            }
             break;
 
         case 'mul':
-            alert(result = mul(firstnumber, secondnumber));
+            result = mul(firstnumber, secondnumber);
+            document.getElementById("result").value = result;
             break;
 
         case 'per':
-            alert(result = per(firstnumber, secondnumber));
+            result = per(firstnumber, secondnumber);
+            document.getElementById("result").value = result;
             break;
 
         case 'MAX':
-            alert(result = MAX(firstnumber, secondnumber));
+            result = MAX(firstnumber, secondnumber);
+            document.getElementById("result").value = result;
             break;
 
         case 'MIN':
-            alert(result = MIN(firstnumber, secondnumber));
+            result = MIN(firstnumber, secondnumber);
+            document.getElementById("result").value = result;
             break;
 
         case 'pow':
-            alert(result = pow(firstnumber, secondnumber));
+            result = pow(firstnumber, secondnumber);
+            document.getElementById("result").value = result;
             break;
 
         case 'pro':
-            alert(result = pro(firstnumber, secondnumber));
+            result = pro(firstnumber, secondnumber);
+            document.getElementById("result").value = result;
             break;
 
     }
