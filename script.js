@@ -7,8 +7,6 @@ function calculate(operation) {
     firstnumber = Number(firstnumber);
     secondnumber = Number(secondnumber)
 
-    document.getElementById("result").value = result;
-
     switch (operation) {
         case 'add':
             result = add(firstnumber, secondnumber);
